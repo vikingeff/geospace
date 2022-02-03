@@ -10,14 +10,14 @@ services:
     volumes:
       - geospacedb:/var/lib/postgresql/data
   web:
-    build: docker/
+    build: . 
     volumes:
       - .:/code/
     ports:
-      - 7070:7070
-    command: bash -c "run.sh"
+      - 4242:4242
+    command: bash -c "./run.sh"
     depends_on:
       - db
     restart: on-failure
 volumes:
-  geospace:
+  geospacedb:

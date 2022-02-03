@@ -6,6 +6,6 @@ WORKDIR /code
 ADD requirements.txt /code/
 RUN pip install -r requirements.txt
 ADD . /code
-EXPOSE 7070
-CMD ["python", "manage.py", "runserver", "0.0.0.0:7070", ">>", "log.log", "2>&1"]
+EXPOSE 4242
+CMD ["python", "manage.py", "runserver", "0.0.0.0:4242", ">>", "log.log", "2>&1"]
 
