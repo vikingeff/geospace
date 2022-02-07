@@ -98,9 +98,9 @@
 <body style="background-color: black;">
 
   {%if request.user.is_authenticated%}
-    {% include "ecom/customer_navbar.html" %}
+    {% include "shop/customer_navbar.html" %}
   {%else%}
-    {% include "ecom/navbar.html" %}
+    {% include "shop/navbar.html" %}
   {%endif%}
 
   <center>
@@ -129,6 +129,6 @@
 
 
   </center>
-  {% include "ecom/footer.html" %}
+  {% include "shop/footer.html" %}
 </body>
 </html>

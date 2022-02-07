@@ -385,7 +385,7 @@ def customer_address_view(request):
             response.set_cookie('address',address)
             return response
     return render(request,'shop/customer_address.html',{'addressForm':addressForm,'product_in_cart':product_in_cart,'product_count_in_cart':product_count_in_cart})
-/
+
 
 
 
